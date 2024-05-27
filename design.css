@@ -1,6 +1,18 @@
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f5f5f5;
+	background-color: #28336d;
+}
+
+.header{
+    background-color: #ffffff;
+    width: 1520px;
+    height: 100px;
+
+}
+#card{
+    background-color: #1b1464;
+    width: 100px;
+    height:100px;
 }
 
 .dashboard {
@@ -10,15 +22,24 @@ body {
 	padding: 20px;
 }
 
+.hyperlink{
+    text-decoration: none;
+     color:#ffffff;
+}
+
 .card {
-	background-color: #fff;
+	background-color: #fbb03b;
 	border-radius: 5px;
+    margin-top: 100px;
+    margin-left: 30px;
 	padding: 20px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
 	margin-top: 0;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card ul {
@@ -30,3 +51,4 @@ body {
 .card li {
 	margin-bottom: 5px;
 }
+
