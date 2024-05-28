@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+
+#customer-info-form {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+.column-layout{
+ display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column-layout input {
+  flex-basis: 48%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .column-layout input {
+    flex-basis: 100%;
+  }
+}
+
+#customer-info-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#customer-info-form legend {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#customer-info-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#customer-info-form input[type="text"],
+#customer-info-form input[type="email"],
+#customer-info-form input[type="tel"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#customer-info-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#customer-info-form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}

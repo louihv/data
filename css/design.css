@@ -21,9 +21,10 @@ body {
 	right: 0;
 
 }
-.font-1{
-	font-family: 'Montserrat';
-	left: 100px;
+.text-1{
+	font-family: 'Montserrat', sans-serif;
+	border-weight: 0;
+	text-align: center;
 }
 #card1{
     background-color: #1b1464;
