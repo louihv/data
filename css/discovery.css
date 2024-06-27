@@ -1,0 +1,196 @@
+@font-face {
+	font-family: 'mot';
+	src: url(/fonts/mostera.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'lejou';
+	src: url(/fonts/lej.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'antique';
+	src: url(/fonts/antique.woff) format('woff');
+  }
+  
+body {
+	width: 900px;
+    background: rgba(0, 0, 0, 0.5) url('/resources/neb.jpg');
+    /* backdrop-filter: blur(5px); */
+	background-size:cover;
+    background-blend-mode: darken;
+    background-position: center;
+   background-repeat:no-repeat;
+   background-attachment: fixed;
+   color: #F9F295;
+   font-family: 'antique', Arial, Helvetica, sans-serif;
+   height:2100px;
+}
+
+/*-------------- header -----------------*/
+.header{
+    background-color: (0,0,0,0,.1);
+	backdrop-filter: blur(10px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 1250px;
+	padding: 10px 140px; /*---length n height--*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+	
+	font-family: 'lejou', Arial, Helvetica, sans-serif;
+}
+
+.catch{
+	font-size: 2rem;
+    color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	color: #D2AC47;
+}
+
+/*-----------------navbar-------------------*/
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+	color: #D2AC47;
+}
+.navbar #last{
+    padding-left: 10px;
+}
+
+
+.icons {
+	position: absolute;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    /*display: none;*/
+}
+/* ------------main-----------*/
+.search-con{
+    font-family: 'lejou', Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 100px;
+    left: 586px;
+}
+.round{
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+    font-family: 'antique', Arial, Helvetica, sans-serif;
+    width:380px;
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+    left: -50px;
+    border: transparent;
+    border-radius: 30px;
+
+}
+.round1{
+    position: relative;
+    font-family: 'lejou', Arial, Helvetica, sans-serif;
+    left: -40px;
+    align-items: center;
+    color:bisque;
+    font-size: 20px;
+    border-width: thin;
+    background-color: #D2AC47;
+    border-radius: 25px;
+    width: 54px;
+    padding: 5px 10px;
+}   
+.search h1{
+    position: relative;
+    top: 110px;
+    left: 560px;
+    font-family: 'antique', Arial, Helvetica, sans-serif;
+    overflow: hidden; 
+    border-right: .4px solid gold;
+    white-space: nowrap; 
+    line-height: 180%;
+    width: 420px;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .90s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 400px }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: gold; }
+}
+
+#result_val{
+    position: relative;
+    top: 100px;
+    left: 580px;
+    font-family: 'lejou', Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: #D2AC47;
+}
+p{
+    display: none;
+    font-family: 'antique', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 600px;
+    position: relative;
+    top: 200px;
+    left: 480px;
+    text-align: justify;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 660px 460px;
+    gap: 15px;
+}
+
+.container {
+   position: relative;
+   top: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 600px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    left: 100px;
+    border: #B8A644 2px dashed;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+    font-family: 'lejou', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0 0 10px;
+    color: #926F34;
+}
+
+.container .description {
+    font-family: 'antique', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #AE8625  ;
+    margin-bottom: 10px;
+    top: 0;
+    left: 0;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container .body {
+    font-family: 'antique', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #DFBD69  ;
+}

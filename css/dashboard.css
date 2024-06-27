@@ -1,0 +1,216 @@
+
+  @font-face {
+	font-family: 'mot';
+	src: url(/fonts/mostera.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'lejou';
+	src: url(/fonts/lej.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'antique';
+	src: url(/fonts/antique.woff) format('woff');
+  }
+  
+
+body {
+	height: 500px;
+    background: rgba(0, 0, 0, 0.5) url('/resources/neb.jpg');
+	background-size:cover;
+    background-blend-mode: darken;
+    background-position: center;
+   background-repeat:no-repeat;
+   background-attachment: fixed;
+}
+
+
+/*-------------- header -----------------*/
+.header{
+    background-color: (0,0,0,0,.1);
+	backdrop-filter: blur(10px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 1250px;
+	padding: 10px 140px; /*---length n height--*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+	
+	font-family: 'lejou', Arial, Helvetica, sans-serif;
+}
+
+.catch{
+	font-size: 2rem;
+    color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	color: #D2AC47;
+}
+
+/* ---------- footer ------------ */
+.cookie_container{
+    position: fixed;
+    background:rgba(0, 0, 0, 0.375);
+	position: fixed;
+	bottom: 0;
+    left: 0;
+    width: 1550px;
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s ease;
+}
+.cookie-banner {
+    color: #D2AC47;
+    text-align: center;
+    font-family: 'antique', Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+  }
+  .cookie-banner a{
+    color: #D2AC47;
+  }
+  #cookie_btn{
+    text-decoration: none;
+    background: transparent;
+    color: #D2AC47;
+    box-shadow: 0 4px 8px rgba(142, 143, 75, 0.664);
+    border: gold 1px solid;
+  }
+  #cookie_btn:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out; 
+  }
+
+/*-----------------navbar-------------------*/
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+	color: #D2AC47;
+}
+.navbar #last{
+    padding-left: 10px;
+}
+
+
+.icons {
+	position: absolute;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    /*display: none;*/
+}
+
+/*-----------main--------*/
+.dashboard {
+	position:relative;
+	grid-gap: 10px;
+	
+}
+.container {
+	position: absolute;
+	top:10px;
+    text-align: center;
+    padding: 50px;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	width:  150px;
+	height:130px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.2s;
+	margin-left: 120px;
+    gap: 60px;
+	content: "";
+    clear: both;
+    display: table;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hyperlink{
+    text-decoration: none;
+     color:#ffffff;
+}
+
+.card h2 {
+	margin-top: 0;
+    color: #ffffff;
+    font-family: 'lejou', Arial, Helvetica, sans-serif;
+	
+}
+
+/* ---------pop-up----------- */
+ .form-popup {
+    display: none;
+    position: fixed;
+    left: 580px;
+    z-index: 3;
+    top: 90px;
+    background-image: url(/resources/tarot_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float:right;
+    color: #ab8853;
+    padding-left:10px;
+    padding-right: 10px;
+    width: 340px;
+    height: 460px;
+    border-radius: 20px;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);   
+    text-align: center;
+    padding-top: 120px;
+
+    
+  }
+  .form-container {
+    max-width: 250px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .open-button{ 
+    background-color: #11ffee00;
+    border:#11ffee00 ;
+  }
+  .form-popup .btn-cancel {
+    background-color: transparent;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    right: 0;
+    width:40px;
+    height: 40px;
+    color: gold;
+    /* border-radius: 50px; */
+    border: transparent;
+  }
+  #zodiac-title{
+    font-family: 'lejou', Arial, Helvetica, sans-serif;
+  }
+
+

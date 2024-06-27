@@ -1,0 +1,302 @@
+@font-face {
+	font-family: 'cinzel';
+	src: url(/fonts/cinzel.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'lejou';
+	src: url(/fonts/lej.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'antiqua';
+	src: url(/fonts/antiqua.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'antique';
+	src: url(/fonts/antique.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'moglan';
+    src: url(/fonts/moglan.woff) format('woff');
+    }
+
+body {
+	
+    background: rgba(0, 0, 0, 0.5) url('/resources/neb.jpg');
+    background-size:cover;
+    background-blend-mode: darken;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    width: 750px;
+    height: 500px;
+}
+
+#pause {
+position: absolute;
+  top:120px;  
+  color: #926F34;
+  right: 50px;
+   text-decoration: none;
+   background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+#play {
+  display: none;
+  position: absolute;
+    top:120px;  
+    color: #926F34;
+    right: 50px;
+     text-decoration: none;
+     background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+  }
+
+/*--------------for header-----------------*/
+.header{
+    background-color: (0,0,0,0,.1);
+	backdrop-filter: blur(10px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 1250px;
+	padding: 10px 140px; /*---length n height--*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+	font-family: 'lejou', Arial, Helvetica, sans-serif;
+}
+
+.catch{
+	font-size: 2rem;
+    color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	color: #D2AC47;
+}
+/*---------------- navbar ----------------*/
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+	color: #D2AC47;
+}
+.navbar #last{
+    padding-left: 10px;
+}
+
+.icons {
+	position: absolute;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    /*display: none;*/
+}
+/*---------------- main----------- */
+
+
+ #up{
+    position: relative;
+    top: 120px;  
+    left: 350px;
+    color: #D2AC47;
+    font-family: 'cinzel', Arial, Helvetica, sans-serif;
+    letter-spacing: 10px;
+}
+
+.container h1{
+    position: relative;
+    top: 160px;
+    left: 150px;
+    font-size: 50px;
+    color: #D2AC47;
+    letter-spacing: 20px;
+    font-family: 'lejou', Arial, Helvetica, sans-serif;
+    z-index: 3;
+}
+.container #mee{
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    top:280px;
+    right: 20px;
+       filter:  blur(4px);
+       z-index: 0;
+}
+#me{
+  position: absolute;
+    width: 600px;
+    height: 600px;
+    top:300px;
+    right: 40px;
+    z-index: 1;
+}
+.container1{
+  color: #D2AC47;
+  font-family: 'antique', Arial, Helvetica, sans-serif;
+}
+.container1 h1{
+  color: #DFBD69;
+  font-size: 50px;
+  position: relative;
+  font-family: 'lejou', Arial, Helvetica, sans-serif;
+  letter-spacing: 10px;
+  top: 490px;
+  left:150px;
+  padding-left: 0;
+}
+.container1 h3{
+  position: relative;
+  color: #926F34;
+  top:440px;
+  left:150px;
+}
+.container1 p{
+  position: relative;
+  width: 490px;
+  top:450px;
+  left:150px;
+}
+/* ---------flipping cards ---------- */
+.org{
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  top:1150px;
+  left: 200px;
+  padding-left: 10px;  
+  perspective: 1000px;
+}
+.org1{
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  top:1150px;
+  left: 600px;
+  padding-left: 10px;  
+  perspective: 1000px;
+}
+.org2{
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  top:1150px;
+  left: 1000px;
+  padding-left: 10px;  
+  perspective: 1000px;
+}
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.org:hover .card{
+  transform: rotateY(180deg);
+}
+.org1:hover .card{
+  transform: rotateY(180deg);
+}
+.org2:hover .card{
+  transform: rotateY(180deg);
+}
+
+.frontofcard, .backofcard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.frontofcard {
+  background-color: #bbb;
+  color: #D2AC47;
+}
+
+.backofcard{
+  background-color: transparent;
+  color: #D2AC47;
+  transform: rotateY(180deg);
+}
+.backofcard h1{
+  font-size: 15px;
+  font-family: 'antique', Arial, Helvetica, sans-serif;
+  position: sticky;
+  top: 10px;
+  padding-top: 50px;
+}
+.backofcard h2{
+  font-size: 15px;
+  font-family: 'antique', Arial, Helvetica, sans-serif;
+  position: sticky;
+  top: 10px;
+  padding-top: 20px;
+  padding-right: 20px;
+  justify-content: center;
+}
+#tags{
+position: relative;
+top:920px;
+font-family: 'moglan', Arial, Helvetica, sans-serif;
+width: 650px;
+letter-spacing: 0;
+font-size: 60px;
+left: 150px;
+}
+
+
+.animated_moon{
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 1620px;
+  right: 820px ;
+  bottom: 0;
+  border-radius: 50%;
+ /* background-image: url('https://www.solarsystemscope.com/textures/download/2k_moon.jpg');  */
+  /* background-image: url('https://www.solarsystemscope.com/textures/previews/preview_neptune.jpg');  */
+ background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2115d5b9-b53e-4f1d-81e4-1d21461eeb45/dbozsk6-f27239ad-b102-465b-a86a-7a9a1c36502f.jpg/v1/fit/w_828,h_412,q_70,strp/map_of_planet_neptune__mixed__texture_for_celestia_by_ronaldanthony4_dbozsk6-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ4OSIsInBhdGgiOiJcL2ZcLzIxMTVkNWI5LWI1M2UtNGYxZC04MWU0LTFkMjE0NjFlZWI0NVwvZGJvenNrNi1mMjcyMzlhZC1iMTAyLTQ2NWItYTg2YS03YTlhMWMzNjUwMmYuanBnIiwid2lkdGgiOiI8PTI5OTYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ciij6VjDZV-EJomm5-12wv52ycu-cV0roNjK8Zy1EUU'); 
+  background-size: 110% 100%;
+  animation-name: moonRotation;
+  animation-duration:20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards !important;
+  box-shadow: inset -10px 8px 6px -5px #ffffff,
+  inset 20px -20px 50px 43px rgba(0, 0, 0, 0.9),
+  7px -6px 14px rgba(255, 255, 255, 0.3215686275); 
+}
+@keyframes moonRotation {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 150% 0%; }
+  100% { background-position: 300% 0%; }
+}
+
+.paragraph p{
+  color: #D2AC47;
+  font-family: 'antique', Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 1650px;
+  left: 750px;
+  font-size: 17px;
+  width: 700px;
+  right: 5px;
+  text-align:justify ;
+  padding-top: 0;
+}
+
+.ident img{
+  position: relative;
+  top: 1250px;
+  width: 1300px;
+  left: 180px;
+}

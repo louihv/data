@@ -1,0 +1,101 @@
+@font-face {
+	font-family: 'mot';
+	src: url(/fonts/mostera.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'lejou';
+	src: url(/fonts/lej.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'antique';
+	src: url(/fonts/antique.woff) format('woff');
+  }
+  
+body {
+	height: 500px;
+    background: rgba(0, 0, 0, 0.5) url('/resources/neb.jpg');
+    /* backdrop-filter: blur(5px); */
+	background-size:cover;
+    background-blend-mode: darken;
+    background-position: center;
+   background-repeat:no-repeat;
+   background-attachment: fixed;
+   color: #F9F295   ;
+   font-family: 'antique', Arial, Helvetica, sans-serif;
+   height:100px;
+}
+
+/*-------------- header -----------------*/
+.header{
+    background-color: (0,0,0,0,.1);
+	backdrop-filter: blur(10px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 1250px;
+	padding: 10px 140px; /*---length n height--*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+	
+	font-family: 'lejou', Arial, Helvetica, sans-serif;
+}
+
+.catch{
+	font-size: 2rem;
+    color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	color: #D2AC47;
+}
+
+/*-----------------navbar-------------------*/
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+	color: #D2AC47;
+}
+.navbar #last{
+    padding-left: 10px;
+}
+
+
+.icons {
+	position: absolute;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    /*display: none;*/
+}
+/* ------------content-----------*/
+h1{
+    position: relative;
+    padding-top: 90px;
+    color: #AE8625 ;
+    font-size: 80px;
+    font-family: 'lejou', Arial, Helvetica, sans-serif;
+    line-height: 0%;
+    padding-left: 20px;
+}
+h2{
+    position: relative;
+    padding-top: 10px;
+    color: #E0AA3E;
+    padding-left: 20px;
+}
+h3{
+    padding-left: 20px;
+}
+a{
+    color: #D2AC47;
+}
+p{
+padding-left: 30px;
+}
+#end{
+    padding-bottom: 100px;
+}
